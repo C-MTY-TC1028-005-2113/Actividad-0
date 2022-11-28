@@ -1,25 +1,95 @@
 {
   "tests": [
     {
-      "name": "Test 1 - Avance1 Nota - la , solo es separador de losdatos de entrada: 8,11,1,AA1,Tec21,2000,Aprendizaje,200,20,8,3,Tec 21 Objetos,8,4,10000,8,0",
-      "setup": "g++ -g -o main main.cpp Serie.cpp Episodio.cpp",
+      "name": "Test opcion 1 y 2 -constructor, sets y gets fecha",
+      "setup": "g++ -g -o main main.cpp Fecha.cpp CuentaBanco.cpp",
       "run": "./main",
-      "input": "8\n11\n1\nAA1\nTec 21\n2000\nAprendizaje\n200\n20\n8\n3\nTec 21 Objetos\n8\n4\n10000\n8\n0",
-      "output": "AAA,ITESM,1000,Aprendizaje,100,8\nGraduacion,1,100\nAA1,Tec 21,2000,Aprendizaje,200,20\nAA1,Tec 21 Objetos,2000,Aprendizaje,200,20\nAA1,Tec 21 Objetos,10000,Aprendizaje,200,20\n",
+      "input": "1\n2\n0\n",
+      "output": "5\n12\n",
       "comparison": "included",
       "timeout": 2,
-      "points": 50
+      "points": 15
+    },
+    {
+      "name": "Test opcion 3 fecha.str( )",
+      "setup": "g++ -g -o main main.cpp Fecha.cpp CuentaBanco.cpp",
+      "run": "./main",
+      "input": "3\n0\n",
+      "output": "01/01",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test opcion 4 Constructores CuentaBanco",
+      "setup": "g++ -g -o main main.cpp Fecha.cpp CuentaBanco.cpp",
+      "run": "./main",
+      "input": "4\n0\n",
+      "output": "Katar,2022,20/11",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test opcion 5 sets",
+      "setup": "g++ -g -o main main.cpp Fecha.cpp CuentaBanco.cpp",
+      "run": "./main",
+      "input": "5\n0\n",
+      "output": "Monterrey,3000,31/12\n",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test opcion 6 gets",
+      "setup": "g++ -g -o main main.cpp Fecha.cpp CuentaBanco.cpp",
+      "run": "./main",
+      "input": "6\n0\n",
+      "output": "Katar 2022$1000-20/11\n",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test opcion 7 deposito",
+      "setup": "g++ -g -o main main.cpp Fecha.cpp CuentaBanco.cpp",
+      "run": "./main",
+      "input": "7\n0\n",
+      "output": "Katar 2022,1005,20/11\n",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
     },
      {
-      "name": "Test 2 - Avance1 Nota - la , solo es separador de losdatos de entrada: 11,10,Mi Graduacion,2,100,11,15,16,17,12,Mi Graduacion 2026,10,Mi Graduacion 2027,10,100,11,14,1000,11,0",
-      "setup": "g++ -g -o main main.cpp Serie.cpp Episodio.cpp",
+      "name": "Test opcion 8 retiro",
+      "setup": "g++ -g -o main main.cpp Fecha.cpp CuentaBanco.cpp",
       "run": "./main",
-      "input": "11\n10\nMi Graduacion\n2\n100\n11\n15\n16\n17\n12\nMi Graduacion 2026\n10\nMi Graduacion 2027\n10\n100\n11\n14\n1000\n11\n0\n",
-      "output": "Graduacion,1,100\nMi Graduacion,2,100\nMi Graduacion\n2\n100\nMi Graduacion 2027,10,100\nMi Graduacion 2027,10,1000\n",
+      "input": "8\n0\n",
+      "output": "Katar 2022,995,20/11\n",
       "comparison": "included",
       "timeout": 2,
-      "points": 50
-    }
+      "points": 10
+    },
+     {
+      "name": "Test opcion 9 str",
+      "setup": "g++ -g -o main main.cpp Fecha.cpp CuentaBanco.cpp",
+      "run": "./main",
+      "input": "9\n0\n",
+      "output": "Argentina,2022,02/02\n",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 5
+    },
+     {
+      "name": "Test opcion 10 regalo",
+      "setup": "g++ -g -o main main.cpp Fecha.cpp CuentaBanco.cpp",
+      "run": "./main",
+      "input": "10\n0\n",
+      "output": "Mexico,1000,28/11\nArgentina,1000,29/11\nAlemania,6000,30/11\nBrasil,6000,01/12\n",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 15
+    },
   ]
 }
 
