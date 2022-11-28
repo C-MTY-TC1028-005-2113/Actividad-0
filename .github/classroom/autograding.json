@@ -78,7 +78,7 @@
       "output": "Argentina,2022,02/02\n",
       "comparison": "included",
       "timeout": 2,
-      "points": 5
+      "points": 10
     },
      {
       "name": "Test opcion 10 regalo",
